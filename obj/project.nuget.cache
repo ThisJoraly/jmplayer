@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5AULfhImsj3tU9FK8mmPyKqOpTIhtvhRbOIqA+VSKXeQbkjCrVSfUUqjcvMqRBNHqDyKJqvsTHN7IDknpP4pvg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Artyom\\source\\repos\\RINGTONEDEMOFINALMIX123dfghfw\\RINGTONEDEMOFINALMIX123dfghfw\\RINGTONEDEMOFINALMIX123dfghfw.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.5\\microsoft-windowsapicodepack-core.1.1.5.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.5\\microsoft-windowsapicodepack-shell.1.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
