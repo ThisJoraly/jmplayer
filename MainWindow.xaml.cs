@@ -62,8 +62,8 @@ namespace RINGTONEDEMOFINALMIX123dfghfw
                 slider.Maximum = player.NaturalDuration.TimeSpan.TotalMilliseconds;
                 slider.TickFrequency = 1;
                 slider.IsSnapToTickEnabled = true;
-                slider.ValueChanged -= track_mesto_ValueChanged;
-                slider.ValueChanged += track_mesto_ValueChanged;
+                slider.ValueChanged -= slider_ValueChanged;
+                slider.ValueChanged += slider_ValueChanged;
 
                 timer.Start();
 
@@ -74,7 +74,7 @@ namespace RINGTONEDEMOFINALMIX123dfghfw
 
 
 
-        private void track_mesto_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             player.Position = TimeSpan.FromMilliseconds(slider.Value);
         }

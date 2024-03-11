@@ -28,7 +28,7 @@
 
         <Grid>
             <StackPanel VerticalAlignment="Center" Margin="0,280,0,0">
-                <Slider Name="slider" Orientation="Horizontal" Grid.Column="1" Margin="10,0,10,0" ValueChanged="track_mesto_ValueChanged" Style="{StaticResource CustomSliderStyle}" Cursor="Hand"/>
+                <Slider Name="slider" Orientation="Horizontal" Grid.Column="1" Margin="10,0,10,0" ValueChanged="slider_ValueChanged" Style="{StaticResource CustomSliderStyle}" Cursor="Hand"/>
                 <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
                     <TextBlock x:Name="current_time" Text="00:00" FontFamily ="Comic Sans MS" Foreground="#2A0072"/>
                 </StackPanel>
