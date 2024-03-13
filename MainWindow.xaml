@@ -6,16 +6,26 @@
         xmlns:local="clr-namespace:RINGTONEDEMOFINALMIX123dfghfw"
         mc:Ignorable="d"
         Title="RINGTONE DEMO FINAL MIX 123 dfghfw" Height="520" Width="800">
-    
+
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/bumaga.jpg"/>
+            <ImageBrush ImageSource="/frutiger.png"/>
         </Grid.Background>
-        <Label Content="jmPlayer" FontFamily="Comic Sans MS" FontSize="15" Foreground="#2A0072" MouseWheel="Label_MouseWheel" />
+        <Label Content="jmPlayer" FontFamily="Comic Sans MS" FontSize="15" Foreground="#FFFFFF" MouseWheel="Label_MouseWheel" />
         <StackPanel Orientation="Horizontal"  VerticalAlignment="Top" HorizontalAlignment="Center">
-            <Label Content="Добавьте файл..." FontFamily="Comic Sans MS" FontSize="15" Foreground="#2A0072"/>
-            <TextBox x:Name="FileName" FontSize="16" Width="260" />
-            <Button Content="Открыть" Margin="0,0,0,0" Click="Open_Button" FontFamily="Comic Sans MS" Background="#FF2A0072" Foreground="White" Cursor="Hand" />
+            <!--<Label Content="Добавьте файл..." FontFamily="Comic Sans MS" FontSize="15" Foreground="#FFFFFF"/>-->
+            <!--<TextBox x:Name="FileName" FontSize="16" Width="260" />-->
+            <Button x:Name="OpenButton" Margin="0,0,0,0" Click="Open_Button" FontFamily="Comic Sans MS" Cursor="Hand" Height="45" Width="45" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/file.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="HistoryButton" Margin="0,0,0,0" Click="History_Button" FontFamily="Comic Sans MS" Cursor="Hand" Height="45" Width="45" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/check_mark.png"/>
+                </Button.Background>
+            </Button>
+            
         </StackPanel>
         <Grid VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="252">
             <Grid.ColumnDefinitions>
@@ -27,24 +37,25 @@
         </Grid>
 
         <Grid>
-            <StackPanel VerticalAlignment="Center" Margin="0,280,0,0">
+            <StackPanel VerticalAlignment="Center" Margin="0,280,0,0" Background="#3F000000">
+                <Slider Name="volume" Orientation="Horizontal" Grid.Column="1" Margin="150,0,150,4" ValueChanged="volume_ValueChanged" Style="{StaticResource CustomSliderStyle}" Cursor="Hand" Value="100" Maximum="100"/>
                 <Slider Name="slider" Orientation="Horizontal" Grid.Column="1" Margin="10,0,10,0" ValueChanged="slider_ValueChanged" Style="{StaticResource CustomSliderStyle}" Cursor="Hand"/>
                 <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock x:Name="current_time" Text="00:00" FontFamily ="Comic Sans MS" Foreground="#2A0072"/>
+                    <TextBlock x:Name="current_time" Text="00:00" FontFamily ="Comic Sans MS" Foreground="#FFFFFF"/>
                 </StackPanel>
                 <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Text="Всего: " FontFamily ="Comic Sans MS" Foreground="#2A0072"/>
-                    <TextBlock x:Name="music_duration"/>
+                    <TextBlock Text="Всего: " FontFamily ="Comic Sans MS" Foreground="#FFFFFF"/>
+                    <TextBlock x:Name="music_duration" Foreground="#FFFFFF"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
         <Grid>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                <RibbonButton Label="Пред." Margin="15,0,15,0" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\back.png" Click="Back_Button" FontFamily ="Comic Sans MS" Foreground="#2A0072" Cursor="Hand"/>
-                <RibbonButton Label="Восп." Margin="15,0,15,0" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\play.png" Click="Play_Button" FontFamily="Comic Sans MS" Foreground="#2A0072" Cursor="Hand"/>
-                <RibbonButton Label="Пауза" Margin="15,0,15,0" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\pause.png" Click="Pause_Button" FontFamily ="Comic Sans MS" Foreground="#2A0072" Cursor="Hand"/>
-                <RibbonButton x:Name="ReplayButton" Margin="15,0,15,0"  Label="Повтор" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\repeat.png" Click="Repeat_Button" FontFamily ="Comic Sans MS" Foreground="#2A0072" Cursor="Hand"/>
-                <RibbonButton Label="След." Margin="15,0,15,0"  LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\next.png" Click="Next_Button" FontFamily ="Comic Sans MS" Foreground="#2A0072" Cursor="Hand"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="#3F000000">
+                <RibbonButton Label="Пред." Margin="25,0,25,0" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\back.png" Click="Back_Button" FontFamily ="Comic Sans MS" Foreground="#FFFFFF" Cursor="Hand"/>
+                <RibbonButton Label="Восп." Margin="25,0,25,0" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\play.png" Click="Play_Button" FontFamily="Comic Sans MS" Foreground="#FFFFFF" Cursor="Hand"/>
+                <RibbonButton Label="Пауза" Margin="25,0,25,0" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\pause.png" Click="Pause_Button" FontFamily ="Comic Sans MS" Foreground="#FFFFFF" Cursor="Hand"/>
+                <RibbonButton x:Name="ReplayButton" Margin="25,0,25,0"  Label="Повтор" LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\repeat.png" Click="Repeat_Button" FontFamily ="Comic Sans MS" Foreground="#FFFFFF" Cursor="Hand"/>
+                <RibbonButton Label="След." Margin="25,0,25,0"  LargeImageSource="C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\icons\next.png" Click="Next_Button" FontFamily ="Comic Sans MS" Foreground="#FFFFFF" Cursor="Hand"/>
             </StackPanel>
         </Grid>
     </Grid>

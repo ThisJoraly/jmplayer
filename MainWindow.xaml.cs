@@ -78,6 +78,11 @@ namespace RINGTONEDEMOFINALMIX123dfghfw
         {
             player.Position = TimeSpan.FromMilliseconds(slider.Value);
         }
+        private void volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            player.Volume = volume.Value / 100f;
+        }
+
 
 
 
@@ -205,6 +210,11 @@ namespace RINGTONEDEMOFINALMIX123dfghfw
             {
                 Console.WriteLine("x");
             }
+        }
+
+        private void History_Button(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 

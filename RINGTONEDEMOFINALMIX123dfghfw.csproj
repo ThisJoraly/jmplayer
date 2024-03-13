@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <None Remove="bumaga.jpg" />
+    <None Remove="check_mark.png" />
+    <None Remove="file.png" />
+    <None Remove="frutiger.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +20,9 @@
 
   <ItemGroup>
     <Resource Include="bumaga.jpg" />
+    <Resource Include="check_mark.png" />
+    <Resource Include="file.png" />
+    <Resource Include="frutiger.png" />
   </ItemGroup>
 
 </Project>

@@ -44,10 +44,10 @@
                             </Grid.RowDefinitions>
                             <Track x:Name="PART_Track" Grid.Row="1">
                                 <Track.DecreaseRepeatButton>
-                                    <RepeatButton Background="#2A0072" BorderBrush="Transparent" />
+                                    <RepeatButton Background="Blue" BorderBrush="Transparent" />
                                 </Track.DecreaseRepeatButton>
                                 <Track.Thumb>
-                                    <Thumb Background="#2A0072" BorderBrush="Transparent" Width="11" Height="11" />
+                                    <Thumb Background="Blue" BorderBrush="Transparent" Width="11" Height="11" />
                                 </Track.Thumb>
                             </Track>
                         </Grid>

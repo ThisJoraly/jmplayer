@@ -23,3 +23,5 @@ C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\RINGTONEDEMOFINALMIX1
 C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\RINGTONEDEMOFINALMIX123dfghfw\obj\Debug\net7.0-windows\RINGTONEDEMOFINALMIX123dfghfw.genruntimeconfig.cache
 C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\RINGTONEDEMOFINALMIX123dfghfw\obj\Debug\net7.0-windows\ref\RINGTONEDEMOFINALMIX123dfghfw.dll
 C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\RINGTONEDEMOFINALMIX123dfghfw\obj\Debug\net7.0-windows\App.baml
+C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\RINGTONEDEMOFINALMIX123dfghfw\obj\Debug\net7.0-windows\History.g.cs
+C:\Users\Artyom\source\repos\RINGTONEDEMOFINALMIX123dfghfw\RINGTONEDEMOFINALMIX123dfghfw\obj\Debug\net7.0-windows\History.baml
